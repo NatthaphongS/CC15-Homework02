@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile card</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        main{
+            /* position: relative; */
+            width: 100%;
+            height: 100vh;
+            font-size: 20px;
+        }
+        .card{
+            border: 1px solid black;
+            border-radius: 10px;
+            box-shadow: 2px 2px 8px 3px rgba(0,0,0,0.49);
+            width: 200px;
+            height: 260px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+        img{
+            width: 100%;
+        }
+        .name{
+            text-align: center;
+            border-top: 1px solid;
+            padding-top: 15px;
+        }
+        .circle{
+            background-color: red;
+            color: white;
+            width: 30px;
+            height: 30px;
+            text-align: center;
+            padding-top: 5px;
+            border-radius: 50%;
+            position: absolute;
+            top: -15px;
+            right: -15px;
+        }
+        .cross{
+            width: 20px;
+            height: 20px;
+            text-align: center;
+            padding-top: 7px;
+            border-radius: 50%;
+            position: absolute;
+            top: 0;
+            left: 2px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="card">
+            <div class="pic">
+                <img src="https://www.svgrepo.com/show/429787/human-man-10.svg" alt="profile">
+            </div>
+            <div class="name"><p>A.Rudiger</p></div>
+            <div class="cross"><a href=""><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M19 5L4.99998 19M5.00001 5L19 19" stroke="#c2c2c2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg></a></div>
+            <div class="circle"><p>7</p></div>
+        </div>
+    </main>
+</body>
+</html>
